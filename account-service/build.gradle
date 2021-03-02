@@ -38,6 +38,7 @@ dependencies {
     implementation "org.springframework.cloud:spring-cloud-starter-netflix-eureka-client"
     implementation "org.springframework.cloud:spring-cloud-starter-sleuth"
     implementation "org.springframework.cloud:spring-cloud-starter-netflix-hystrix"
-    implementation "org.postgresql:postgresql:42.2.5"
+    // https://mvnrepository.com/artifact/mysql/mysql-connector-java
+    implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.23'
     testImplementation "junit:junit:4.1"
 }

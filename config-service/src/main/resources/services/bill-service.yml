@@ -1,17 +1,17 @@
 spring:
   jpa:
-    database: POSTGRESQL
+    database: MYSQL
     properties.hibernate.temp.use_jdbc_metadata_defaults: false
     hibernate:
       ddl-auto: create
     properties:
   datasource:
-    platform: postgres
-    url: jdbc:mysql://localhost:3306/bill_service_databaseuseSSL=false
+    platform: mysql
+    url: jdbc:mysql://localhost:3306/bill_service_databaseuse?useSSL=false
 
-    username: kali
+    username: root
     password: kali
-    driver-class-name: com.mysql.cj.jdbc.Driver
+    driver-class-name: com.mysql.jdbc.Driver
 
 server:
   servlet:
